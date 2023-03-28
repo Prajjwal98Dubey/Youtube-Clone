@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useSearchParams } from 'react-router-dom';
 import { closeMenu } from '../utils/appSlice';
+import ShimmerWatch from './ShimmerWatch';
 
 const WatchPage = () => {
     const [searchParam]=useSearchParams();
