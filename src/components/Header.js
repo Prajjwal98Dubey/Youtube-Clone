@@ -20,7 +20,7 @@ const Header = () => {
             <button className='border border-gray-400 px-5 py-2 rounded-r-full bg-gray-100'>🔎</button>
         </div>
         <div className='col-span-1'>
-            <img className='h-8' src={USER_LOGO} alt="user" />
+            <img className='h-8 cursor-pointer' src={USER_LOGO} alt="user" />
         </div>
     </div>
   )
