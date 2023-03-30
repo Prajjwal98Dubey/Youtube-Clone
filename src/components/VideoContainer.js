@@ -21,7 +21,7 @@ const VideoContainer=()=>{
     if(isloading===true) return <MainShimmer/>
     return (
         <div className="flex flex-wrap"> 
-            {videos.map(video=><Link to={"/watch?v="+video.id}><VideoCard key={video.id} info={video}/></Link>)}
+            {videos.map((video,index)=><Link key={index} to={"/watch?v="+video.id}><VideoCard key={video.id} info={video}/></Link>)}
         </div>
     )
 }
